@@ -25,7 +25,11 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/hammerjs/hammer.min.js",
+              "./src/assets/js/inputCamera.js",
+              "./src/assets/js/jquery-3.3.1.min.js"
+            ]
           },
           "configurations": {
             "production": {
