@@ -10,6 +10,7 @@ export interface Food {
 })
 export class AppComponent {
   title = 'Schäden Mobile';
+  selectedValue='';
   foods: Food[] = [
     {value: 'steak-0', viewValue: 'Steak'},
     {value: 'pizza-1', viewValue: 'Pizza'},
