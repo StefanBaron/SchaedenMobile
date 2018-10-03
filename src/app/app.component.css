@@ -33,12 +33,18 @@ body {
   mat-form-field{
     margin: 10px 10px;
   }
-  mat-radio-button{
+  mat-radio-button,
+  mat-checkbox{
     margin: 2px 5px;
     padding: 5px;
-  
-  }
+    }
   .radio-newline>mat-radio-button{
     display: block;
 
+  }
+  .as-block{
+    display: block;
+  }
+  .cdk-overlay-pane>div {
+    transform: translateX(25px);
   }

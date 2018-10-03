@@ -11,7 +11,9 @@ import {
   MatRadioModule,
   MatSelectModule,
   MatOptionModule,
-  MatDividerModule
+  MatDividerModule,
+  MatCheckboxModule,
+  MatDatepickerModule
 } from '@angular/material';
 
 @NgModule({
@@ -26,6 +28,8 @@ import {
     MatSelectModule,
     MatOptionModule,
     MatDividerModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
     BrowserAnimationsModule
   ],
   exports: [
@@ -39,6 +43,8 @@ import {
     MatSelectModule,
     MatOptionModule,
     MatDividerModule,
+    MatCheckboxModule,
+    MatDatepickerModule,
     BrowserAnimationsModule
   ]
 })
