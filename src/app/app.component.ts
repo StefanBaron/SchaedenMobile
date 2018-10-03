@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {FormControl} from '@angular/forms';
 export interface Food {
   value: string;
   viewValue: string;
@@ -16,6 +17,6 @@ export class AppComponent {
     {value: 'pizza-1', viewValue: 'Pizza'},
     {value: 'tacos-2', viewValue: 'Tacos'}
   ];
-
+  stateCtrl = new FormControl();
   
 }

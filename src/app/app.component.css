@@ -19,3 +19,26 @@ body {
     right: 20px;
     color: white;
   }
+
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+    display: block;
+  }
+  mat-form-field{
+    margin: 10px 10px;
+  }
+  mat-radio-button{
+    margin: 2px 5px;
+    padding: 5px;
+  
+  }
+  .radio-newline>mat-radio-button{
+    display: block;
+
+  }

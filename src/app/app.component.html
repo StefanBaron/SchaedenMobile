@@ -5,22 +5,50 @@
       <input type="file" accept="image/*;capture=camera" onchange="readURL(this);" />
   </div>
 </div>
+<mat-divider></mat-divider>
    <mat-form-field class="example-full-width">
       <input matInput placeholder="Titel für diesen Schaden (kurz)" value="">
     </mat-form-field>
-  <br />
+
+    <mat-divider></mat-divider>
+    
+    <mat-form-field class="example-full-width">
+      <mat-select placeholder="Anlage" [(ngModel)]="selectedValue" name="food">
+        <mat-option *ngFor="let food of foods" [value]="food.value">
+          {{food.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Zugewiesen an (E-Mails Adressen, getrennt durch ';')" value="">
+    </mat-form-field>
+
+    <mat-divider></mat-divider>
+    
+    <label>Schadensart</label>  
+    <mat-radio-group class="example-full-width" class="radio-newline">
+      <mat-radio-button value="1">Betonabplatzung</mat-radio-button>
+      <mat-radio-button value="2">Riss</mat-radio-button>
+      <mat-radio-button value="3">Fugenfüllung lose</mat-radio-button>
+      <mat-radio-button value="4">Einbauteil defekt</mat-radio-button>
+      <mat-radio-button value="5">sonstiges</mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Schadensart (kurz)" value="">
+    </mat-form-field>
+    
+    <mat-divider></mat-divider>
+
     <mat-form-field class="example-full-width">
       <textarea matInput placeholder="Beschreibung"></textarea>
     </mat-form-field>
 
-    <br />
-    <mat-radio-group>
+    <mat-radio-group class="example-full-width">
       <mat-radio-button value="1">Option 1</mat-radio-button>
       <mat-radio-button value="2">Option 2</mat-radio-button>
     </mat-radio-group>
 
-<br />
-<mat-form-field>
+<mat-form-field class="example-full-width">
   <mat-select placeholder="Favorite food" [(ngModel)]="selectedValue" name="food">
     <mat-option *ngFor="let food of foods" [value]="food.value">
       {{food.viewValue}}
@@ -31,7 +59,7 @@
 <p> Selected value: {{selectedValue}} </p>
 
 <br />
-<button mat-button>
+<button mat-stroked-button>
   Schaden melden
 </button>
 

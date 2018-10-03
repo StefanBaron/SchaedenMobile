@@ -10,7 +10,8 @@ import {
   MatInputModule,
   MatRadioModule,
   MatSelectModule,
-  MatOptionModule
+  MatOptionModule,
+  MatDividerModule
 } from '@angular/material';
 
 @NgModule({
@@ -24,6 +25,7 @@ import {
     MatRadioModule,
     MatSelectModule,
     MatOptionModule,
+    MatDividerModule,
     BrowserAnimationsModule
   ],
   exports: [
@@ -36,6 +38,7 @@ import {
     MatRadioModule,
     MatSelectModule,
     MatOptionModule,
+    MatDividerModule,
     BrowserAnimationsModule
   ]
 })
